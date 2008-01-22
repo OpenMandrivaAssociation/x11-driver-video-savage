@@ -1,8 +1,6 @@
-%define debug_package	%{nil}
-
 Name: x11-driver-video-savage
 Version: 2.1.3
-Release: %mkrel 3
+Release: %mkrel 4
 Summary: The X.org driver for S3 Savage Cards
 Group: System/X11
 URL: http://xorg.freedesktop.org
