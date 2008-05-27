@@ -1,6 +1,6 @@
 Name: x11-driver-video-savage
-Version: 2.1.3
-Release: %mkrel 5
+Version: 2.2.1
+Release: %mkrel 1
 Summary: The X.org driver for S3 Savage Cards
 Group: System/X11
 URL: http://xorg.freedesktop.org
@@ -16,15 +16,11 @@ BuildRequires: GL-devel
 
 Conflicts: xorg-x11-server < 7.0
 
-Patch1: 0001-Dont-call-missing-function-vbeModeInit.patch
-
 %description
 The X.org driver for S3 Savage Cards
 
 %prep
 %setup -q -n xf86-video-savage-%{version}
-
-%patch1 -p1
 
 %build
 %configure
