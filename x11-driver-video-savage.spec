@@ -17,7 +17,7 @@ BuildRequires: GL-devel
 Conflicts: xorg-x11-server < 7.0
 
 %description
-The X.org driver for S3 Savage Cards.
+x11-driver-video-savage is the X.org driver for S3 Savage Cards.
 
 %prep
 %setup -q -n xf86-video-savage-%{version}
