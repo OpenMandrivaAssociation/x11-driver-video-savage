@@ -1,5 +1,5 @@
 Name: x11-driver-video-savage
-Version: 2.3.0
+Version: 2.3.1
 Release: %mkrel 1
 Summary: X.org driver for S3 Savage Cards
 Group: System/X11
@@ -23,7 +23,7 @@ x11-driver-video-savage is the X.org driver for S3 Savage Cards.
 %setup -q -n xf86-video-savage-%{version}
 
 %build
-%configure
+%configure2_5x
 %make
 
 %install
