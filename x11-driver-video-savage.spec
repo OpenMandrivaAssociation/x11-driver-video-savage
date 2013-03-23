@@ -1,3 +1,5 @@
+%define _disable_ld_no_undefined 1
+
 Summary:	X.org driver for S3 Savage Cards
 Name:		x11-driver-video-savage
 Version:	2.3.6
