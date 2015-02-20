@@ -1,0 +1,27 @@
+From d28cd83c7b0b4a943efbe5ddf257c8ee2646ea73 Mon Sep 17 00:00:00 2001
+From: Adam Jackson <ajax@redhat.com>
+Date: Tue, 29 Jul 2014 09:15:26 -0400
+Subject: [PATCH] dri: Stop (uselessly) initializing the ValidateTree hooks
+
+Signed-off-by: Adam Jackson <ajax@redhat.com>
+---
+ src/savage_dri.c | 3 ---
+ 1 file changed, 3 deletions(-)
+
+diff --git a/src/savage_dri.c b/src/savage_dri.c
+index bdb78e4..0842821 100644
+--- a/src/savage_dri.c
++++ b/src/savage_dri.c
+@@ -875,9 +875,6 @@ Bool SAVAGEDRIScreenInit( ScreenPtr pScreen )
+    psav->coreWakeupHandler = pDRIInfo->wrap.WakeupHandler;
+    pDRIInfo->wrap.WakeupHandler = SAVAGEWakeupHandler;
+ 
+-   pDRIInfo->wrap.ValidateTree = NULL;
+-   pDRIInfo->wrap.PostValidateTree = NULL;
+-
+    pDRIInfo->createDummyCtx = TRUE;
+    pDRIInfo->createDummyCtxPriv = FALSE;
+ 
+-- 
+1.8.4.5
+
