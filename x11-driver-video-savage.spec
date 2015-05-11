@@ -2,13 +2,12 @@
 
 Summary:	X.org driver for S3 Savage Cards
 Name:		x11-driver-video-savage
-Version:	2.3.7
-Release:	12
+Version:	2.3.8
+Release:	1
 Group:		System/X11
 License:	MIT
 Url:		http://xorg.freedesktop.org
 Source0:	http://xorg.freedesktop.org/releases/individual/driver/xf86-video-savage-%{version}.tar.bz2
-Patch0:		U_dri-Stop-uselessly-initializing-the-ValidateTree-hoo.patch
 BuildRequires:	pkgconfig(gl)
 BuildRequires:	pkgconfig(libdrm)
 BuildRequires:	pkgconfig(xorg-macros)
