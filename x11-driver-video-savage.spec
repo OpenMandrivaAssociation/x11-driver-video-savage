@@ -2,7 +2,7 @@
 
 Summary:	X.org driver for S3 Savage Cards
 Name:		x11-driver-video-savage
-Version:	2.3.8.20161117
+Version:	2.3.9
 Release:	1
 Group:		System/X11
 License:	MIT
