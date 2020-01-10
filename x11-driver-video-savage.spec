@@ -20,7 +20,7 @@ x11-driver-video-savage is the X.org driver for S3 Savage Cards.
 
 %prep
 %setup -qn xf86-video-savage-%{version}
-%apply_patches
+%autopatch -p1
 
 %build
 %configure
